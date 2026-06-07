@@ -1,33 +1,31 @@
 // templates/normal.js
 
-import { CONFIG } from "../konten/home.js";
-
 import { head } from "./parts/head.js";
 import { header } from "./parts/header.js";
 import { secheader } from "./parts/secheader.js";
 import { secfooter } from "./parts/secfooter.js";
 import { footer } from "./parts/footer.js";
 
-export function normalTemplate() {
+export function normalTemplate(page) {
   return `
 <!DOCTYPE html>
 <html lang="id">
 
 <head>
-${head(CONFIG)}
+${head(page)}
 </head>
 
 <body>
 
-${header(CONFIG)}
+${header(page)}
 
-${secheader(CONFIG)}
+${secheader(page)}
 
-${CONFIG.content}
+${page.content}
 
-${secfooter(CONFIG)}
+${secfooter(page)}
 
-${footer(CONFIG)}
+${footer(page)}
 
 </body>
 </html>
