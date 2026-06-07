@@ -1,4 +1,4 @@
-// functions/rss.js
+// s functions/rss.js
 
 import { SITE, PAGES } from "../konten/pages.js";
 
