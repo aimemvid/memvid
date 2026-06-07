@@ -2,7 +2,7 @@
 
 import { CONFIG } from "../config/site.js";
 
-export function ampTemplate() {
+export function ampTemplate(page) {
   return `<!doctype html>
 <html amp lang="id">
 
