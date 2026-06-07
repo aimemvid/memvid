@@ -1,4 +1,4 @@
-// functions/[[path]].js
+// s functions/[[path]].js
 
 import { ampPage } from "./amp.js";
 import { pagesPage } from "./pages.js";
