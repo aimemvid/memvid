@@ -1,6 +1,6 @@
 // config/site.js
 
-export const CONFIG = {
+export const home = {
   site_name: "Ai Mr Dennis",
 
   title: "Ai Mr Dennis - Neo Esports Futuristik & Hiburan Digital Modern",
