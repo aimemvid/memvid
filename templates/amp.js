@@ -1,4 +1,4 @@
-// templates/amp.js
+// s templates/amp.js
 
 export function ampTemplate(page) {
   return `<!doctype html>
