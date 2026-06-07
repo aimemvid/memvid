@@ -1,7 +1,5 @@
 // templates/amp.js
 
-import { CONFIG } from "../config/site.js";
-
 export function ampTemplate(page) {
   return `<!doctype html>
 <html amp lang="id">
@@ -10,28 +8,28 @@ export function ampTemplate(page) {
 
 <meta charset="utf-8">
 
-<title>${CONFIG.title}</title>
+<title>${page.title}</title>
 
 <meta name="viewport"
       content="width=device-width,minimum-scale=1,initial-scale=1">
 
 <meta name="description"
-      content="${CONFIG.desc}">
+      content="${page.desc}">
 
 <link rel="canonical"
-      href="${CONFIG.canonical}">
+      href="${page.canonical}">
 
 <link rel="icon"
-      href="${CONFIG.favicon}">
+      href="${page.favicon}">
 
 <meta property="og:title"
-      content="${CONFIG.title}">
+      content="${page.title}">
 
 <meta property="og:description"
-      content="${CONFIG.desc}">
+      content="${page.desc}">
 
 <meta property="og:image"
-      content="${CONFIG.image}">
+      content="${page.image}">
 
 <script async
         src="https://cdn.ampproject.org/v0.js"></script>
@@ -43,27 +41,6 @@ body{
   -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
   animation:-amp-start 8s steps(1,end) 0s 1 normal both
 }
-
-@-webkit-keyframes -amp-start{
-  from{visibility:hidden}
-  to{visibility:visible}
-}
-
-@-moz-keyframes -amp-start{
-  from{visibility:hidden}
-  to{visibility:visible}
-}
-
-@-ms-keyframes -amp-start{
-  from{visibility:hidden}
-  to{visibility:visible}
-}
-
-@-o-keyframes -amp-start{
-  from{visibility:hidden}
-  to{visibility:visible}
-}
-
 @keyframes -amp-start{
   from{visibility:hidden}
   to{visibility:visible}
@@ -73,9 +50,6 @@ body{
 <noscript>
 <style amp-boilerplate>
 body{
-  -webkit-animation:none;
-  -moz-animation:none;
-  -ms-animation:none;
   animation:none
 }
 </style>
@@ -94,7 +68,7 @@ body{
 
 <body>
 
-${CONFIG.content}
+${page.content}
 
 </body>
 
