@@ -1,13 +1,13 @@
 // functions/robots.js
 
-import { CONFIG } from "../config/site.js";
+import { SITE } from "../konten/pages.js";
 
 export function robotsPage() {
   return new Response(
 `User-agent: *
 Allow: /
 
-Sitemap: ${CONFIG.canonical}sitemap.xml`,
+Sitemap: ${SITE.canonical}sitemap.xml`,
     {
       headers: {
         "content-type": "text/plain; charset=UTF-8",
