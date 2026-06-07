@@ -1,4 +1,4 @@
-// functions/robots.js
+// s functions/robots.js
 
 import { SITE } from "../konten/pages.js";
 
