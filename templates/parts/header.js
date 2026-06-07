@@ -1,22 +1,18 @@
 // templates/parts/header.js
 
-export function header(CONFIG) {
+export function header(page) {
   return `
-<header>
+<header class="site-header">
 
-  <div class="site-header">
+  <a href="/">
 
-    <a href="${CONFIG.canonical}"
-       title="${CONFIG.site_name}">
+    <img
+      src="${page.logoimage}"
+      alt="${page.site_name}"
+      width="180"
+      height="60">
 
-      <img src="${CONFIG.logoimage}"
-           alt="${CONFIG.site_name}"
-           width="180"
-           height="60">
-
-    </a>
-
-  </div>
+  </a>
 
 </header>
 `;
