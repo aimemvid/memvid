@@ -18,6 +18,6 @@ export const home = {
   favicon: "https://aimrferdycheat.blogspot.com/favicon.ico",
 
   content: `
-    isi konten
+    isi konten s
   `
 };
