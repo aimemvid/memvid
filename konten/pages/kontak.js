@@ -1,8 +1,19 @@
 export const kontak = {
-  title: "Kontak",
-  desc: "Hubungi kami",
+  title: "Ai Mr Dennis - Neo Esports Futuristik & Hiburan Digital Modern",
+
+  desc: "Ai Mr Dennis menghadirkan pengalaman hiburan digital bertema neo esports dengan visual futuristik, arena battle modern, dan atmosfer kompetitif yang premium.",
+
+  canonical: "https://aimrdennis.aipro.id/",
+
+  afflink: "https://apk.mrdennis.workers.dev/",
+
+  logoimage: "https://portaljuragan.dev/paravox.games/assets/logo.png",
+
+  image: "https://portaljuragan.dev/paravox.games/assets/juragan69xparavox.png",
+
+  favicon: "https://aimrferdycheat.blogspot.com/favicon.ico",
+
   content: `
-    <h1>Kontak</h1>
-    <p>Isi halaman kontaks.</p>
+    isi konten
   `
 };
