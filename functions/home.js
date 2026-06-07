@@ -1,15 +1,17 @@
 // functions/home.js
 
+import { PAGES } from "../konten/pages.js";
 import { normalTemplate } from "../templates/normal.js";
 
 export function homePage() {
+
+  const page = PAGES["/"];
+
   return new Response(
-    normalTemplate(),
+    normalTemplate(page),
     {
-      status: 200,
       headers: {
-        "content-type": "text/html; charset=UTF-8",
-        "cache-control": "public, max-age=300"
+        "content-type": "text/html; charset=UTF-8"
       }
     }
   );
