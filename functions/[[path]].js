@@ -1,6 +1,5 @@
 // functions/[[path]].js
 
-import { homePage } from "./home.js";
 import { ampPage } from "./amp.js";
 import { pagesPage } from "./pages.js";
 import { robotsPage } from "./robots.js";
@@ -11,12 +10,8 @@ export async function onRequest({ request }) {
 
   const { pathname } = new URL(request.url);
 
-  if (pathname === "/") {
-    return homePage(request);
-  }
-
   if (pathname === "/amp") {
-    return ampPage(request);
+    return ampPage("/");
   }
 
   if (pathname === "/robots.txt") {
