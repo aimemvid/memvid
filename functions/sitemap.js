@@ -1,4 +1,4 @@
-// functions/sitemap.js
+// s functions/sitemap.js
 
 import { SITE, PAGES } from "../konten/pages.js";
 
