@@ -1,11 +1,11 @@
 // templates/parts/footer.js
 
-export function footer(CONFIG) {
+export function footer(home) {
   return `
 <footer class="site-footer">
 
   <p>
-    &copy; ${new Date().getFullYear()} ${CONFIG.site_name}
+    &copy; ${new Date().getFullYear()} ${home.site_name}
   </p>
 
 </footer>
