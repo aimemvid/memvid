@@ -1,7 +1,7 @@
 // functions/pages.js
 
-import { PAGES } from "../config/pages.js";
-import { pagesTemplate } from "../templates/pages.js";
+import { PAGES } from "../konten/pages.js";
+import { normalTemplate } from "../templates/normal.js";
 
 export function pagesPage(pathname) {
 
@@ -9,17 +9,13 @@ export function pagesPage(pathname) {
 
   if (!page) {
     return new Response("404 - Not Found", {
-      status: 404,
-      headers: {
-        "content-type": "text/plain; charset=UTF-8"
-      }
+      status: 404
     });
   }
 
   return new Response(
-    pagesTemplate(page),
+    normalTemplate(page),
     {
-      status: 200,
       headers: {
         "content-type": "text/html; charset=UTF-8"
       }
